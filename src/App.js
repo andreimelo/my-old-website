@@ -6,6 +6,7 @@ class App extends Component {
   render() {
     return (
       <div>
+        <div className="andrei_melo_header"></div>
       <div className="andrei_melo_container">
       <img src={WebUnderConstruction} className="web_image_size" />
       </div>
