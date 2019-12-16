@@ -1,10 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Index from '../src/model/Index'
+import './index.scss';
+import App from './pages/App-Route';
 
-ReactDOM.render(<Index />, document.getElementById('root'));
-
-
-//Front End Developer => Andrei Melo 
-
+ReactDOM.render(<App />, document.getElementById('root'));
+//Front End Developer => Andrei Melo
