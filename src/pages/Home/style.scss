@@ -1,0 +1,190 @@
+@import "../../helpers/global-color.scss";
+
+.container {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  &__row {
+    height: auto;
+    margin: auto;
+    display: flex;
+    max-width: 1300px;
+  }
+  &__column {
+    flex: 50%;
+    height: 300px;
+    &-inner {
+      position: absolute;
+      top: 250px;
+    }
+  }
+  &__title {
+    &-ct1 {
+      width: 340px;
+      color: $color--darker-blue;
+      font-weight: lighter;
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+    &-ct2 {
+      width: 350px;
+      color: #0d102d;
+      font-weight: 600;
+      animation: typing 2.5s steps(30, end), blink-caret 0.5s step-end infinite;
+      font-size: 39px;
+      line-height: 45px;
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      border-right: 0.15em solid #7f8c8d; /* The typewriter cursor */
+      white-space: nowrap; /* Keeps the content on a single line */
+      letter-spacing: 0.15em; /* Adjust as needed */
+      margin-bottom: 10px;
+    }
+    &-ct3 {
+      width: 390px;
+      color: $color--darker-blue;
+      font-weight: lighter;
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+#human-flat-ct {
+  margin-right: -30px;
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .container {
+    &__column {
+      &-inner {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+      }
+    }
+    &__title {
+      &-ct1 {
+        margin: 0 auto;
+      }
+      &-ct2 {
+        margin: 0 auto;
+        width: 350px;
+      }
+      &-ct3 {
+        margin: 0 auto;
+      }
+    }
+  }
+  #human-flat-ct {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1203px) {
+  .container {
+    &__column {
+      &-inner {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+      }
+    }
+    &__title {
+      &-ct1 {
+        margin: 0 auto;
+      }
+      &-ct2 {
+        margin: 0 auto;
+        width: 350px;
+      }
+      &-ct3 {
+        margin: 0 auto;
+      }
+    }
+  }
+  #human-flat-ct {
+    display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    &__column {
+      &-inner {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+      }
+    }
+    &__title {
+      &-ct1 {
+        margin: 0 auto;
+      }
+      &-ct2 {
+        margin: 0 auto;
+        width: 350px;
+      }
+      &-ct3 {
+        margin: 0 auto;
+      }
+    }
+  }
+  #human-flat-ct {
+    display: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    &__column {
+      &-inner {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+      }
+    }
+    &__title {
+      &-ct1 {
+        margin: 0 auto;
+      }
+      &-ct2 {
+        margin: 0 auto;
+        width: 350px;
+      }
+      &-ct3 {
+        margin: 0 auto;
+      }
+    }
+  }
+  #human-flat-ct {
+    display: none;
+  }
+}
+
+/* Animation */
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #7f8c8d;
+  }
+}
