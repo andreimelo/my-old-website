@@ -1,0 +1,11 @@
+@import "../../util/helpers/global-font-size.scss";
+@import "../../util/helpers/global-color.scss";
+
+.textarea {
+  width: 362px;
+  height: 34px;
+  border-radius: 5px;
+  padding: 10px;
+  resize: none;
+  border: 1px solid $color--semi-lighter-gray;
+}

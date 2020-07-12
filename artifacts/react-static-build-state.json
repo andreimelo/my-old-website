@@ -1,0 +1,61 @@
+{
+  "prefetchRate": 5,
+  "maxThreads": 1,
+  "disableRoutePrefixing": false,
+  "outputFileRate": 100,
+  "extensions": [
+    ".js",
+    ".jsx"
+  ],
+  "minLoadTime": 200,
+  "disablePreload": false,
+  "disableRuntime": false,
+  "preloadPollInterval": 300,
+  "productionSourceMaps": false,
+  "entry": "index.js",
+  "plugins": [
+    [
+      "react-static-plugin-sass",
+      {
+        "includePaths": [
+          "src/"
+        ]
+      }
+    ],
+    "/Users/andreiagnomelo/Desktop/Projects/myOfficialPortfolio"
+  ],
+  "paths": {
+    "ROOT": "/Users/andreiagnomelo/Desktop/Projects/myOfficialPortfolio",
+    "SRC": "/Users/andreiagnomelo/Desktop/Projects/myOfficialPortfolio/src",
+    "DIST": "/Users/andreiagnomelo/Desktop/Projects/myOfficialPortfolio/dist",
+    "ASSETS": "/Users/andreiagnomelo/Desktop/Projects/myOfficialPortfolio/dist",
+    "PLUGINS": "/Users/andreiagnomelo/Desktop/Projects/myOfficialPortfolio/plugins",
+    "TEMP": "/Users/andreiagnomelo/Desktop/Projects/myOfficialPortfolio/tmp",
+    "ARTIFACTS": "/Users/andreiagnomelo/Desktop/Projects/myOfficialPortfolio/artifacts",
+    "PUBLIC": "/Users/andreiagnomelo/Desktop/Projects/myOfficialPortfolio/public",
+    "NODE_MODULES": "/Users/andreiagnomelo/Desktop/Projects/myOfficialPortfolio/node_modules",
+    "EXCLUDE_MODULES": "/Users/andreiagnomelo/Desktop/Projects/myOfficialPortfolio/node_modules",
+    "PACKAGE": "/Users/andreiagnomelo/Desktop/Projects/myOfficialPortfolio/package.json",
+    "HTML_TEMPLATE": "/Users/andreiagnomelo/Desktop/Projects/myOfficialPortfolio/dist/index.html",
+    "STATIC_DATA": "/Users/andreiagnomelo/Desktop/Projects/myOfficialPortfolio/dist/staticData"
+  },
+  "siteRoot": "/",
+  "basePath": "",
+  "publicPath": "/",
+  "assetsPath": "",
+  "extractCssChunks": false,
+  "inlineCss": false,
+  "babelExcludes": [],
+  "devServer": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "terser": {
+    "terserOptions": {
+      "mangle": {},
+      "parse": {},
+      "compress": {},
+      "output": {}
+    }
+  }
+}

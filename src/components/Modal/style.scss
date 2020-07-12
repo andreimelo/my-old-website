@@ -1,0 +1,68 @@
+@import "../../util/helpers/global-color.scss";
+
+.modal {
+  &__backdrop {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    z-index: 1;
+    background-color: $color--black-lighter;
+  }
+  &__body {
+    position: fixed;
+    border-radius: 20px;
+    background: $color--white;
+    top: 40vh;
+    left: 50%;
+    z-index: 1;
+    animation: in 0.4s ease;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 8px 0 $color--black-super-lighter;
+    &-out {
+      animation: out 0.4s ease-out;
+      animation-fill-mode: forwards;
+    }
+  }
+  &__content {
+    padding: 40px;
+    &-position-right {
+      float: right;
+      margin-top: -12px;
+      cursor: pointer;
+    }
+    &-center {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    }
+  }
+}
+
+@keyframes in {
+  0% {
+    opacity: 0;
+    top: 0%;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+    top: 40%;
+  }
+}
+
+@keyframes out {
+  from {
+    top: 50%;
+    opacity: 1;
+  }
+  to {
+    top: 100%;
+    opacity: 0;
+  }
+}

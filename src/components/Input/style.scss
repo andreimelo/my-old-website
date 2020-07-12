@@ -1,0 +1,10 @@
+@import "../../util/helpers/global-font-size.scss";
+@import "../../util/helpers/global-color.scss";
+
+.input {
+  width: 372px;
+  height: 34px;
+  border-radius: 5px;
+  padding-left: 10px;
+  border: 1px solid $color--semi-lighter-gray;
+}

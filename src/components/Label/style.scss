@@ -1,0 +1,9 @@
+@import "../../util/helpers/global-font-size.scss";
+@import "../../util/helpers/global-color.scss";
+
+.font {
+  font-size: $semi-medium;
+  color: $color--darker-blue;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}

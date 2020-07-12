@@ -1,0 +1,63 @@
+#container {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  height: 630px;
+  &__content {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1300px;
+    height: 100px;
+  }
+}
+
+//   @media (min-width: 1024px) and (max-width: 1366px) {
+//     .navbar {
+//       max-width: 1030px;
+//       &__logo {
+//         margin-left: 70px;
+//       }
+//     }
+//   }
+//   /* Portrait tablet to landscape and desktop */
+//   @media (min-width: 768px) and (max-width: 1023px) {
+//     .navbar {
+//       max-width: 770px;
+//       &__logo {
+//         margin-left: 40px;
+//       }
+//     }
+//   }
+//   @media (min-width: 481px) and (max-width: 767px) {
+//     .navbar {
+//       max-width: 490px;
+//       &__logo {
+//         margin-left: 40px;
+//       }
+//     }
+//   }
+//   @media (min-width: 320px) and (max-width: 480px) {
+//     .navbar {
+//       max-width: 340px;
+//       &__logo {
+//         margin-left: 40px;
+//       }
+//     }
+//   }
+
+//   /* Animation */
+//   @keyframes floating {
+//     from {
+//       transform: translate(0, 0px);
+//     }
+
+//     65% {
+//       transform: translate(0, 5px);
+//     }
+
+//     to {
+//       transform: translate(0, -0px);
+//     }
+//   }

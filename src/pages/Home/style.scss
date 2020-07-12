@@ -1,4 +1,4 @@
-@import "../../helpers/global-color.scss";
+@import "../../util/helpers/global-color.scss";
 
 .container {
   display: block;
@@ -15,7 +15,7 @@
     height: 300px;
     &-inner {
       position: absolute;
-      top: 250px;
+      top: 220px;
     }
   }
   &__title {
@@ -45,6 +45,40 @@
       font-weight: lighter;
       font-size: 35px;
       margin-bottom: 10px;
+    }
+  }
+  &__image {
+    background-image: url("../../assets/Blob2.svg");
+    width: 520px;
+    position: absolute;
+    margin-top: 10%;
+    background-repeat: no-repeat;
+    height: 500px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    &-clock {
+      background-image: url("../../assets/Clock.svg");
+      width: 150px;
+      height: 150px;
+      margin: 70px auto;
+      background-repeat: no-repeat;
+    }
+  }
+  &__content {
+    margin-top: -80px;
+    text-align: center;
+    &-title {
+      font-weight: 700;
+      color: $color--white;
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+    &-subtitle {
+      font-weight: 500;
+      font-size: 18px;
+      color: $color--white;
     }
   }
 }
